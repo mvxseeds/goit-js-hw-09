@@ -31,11 +31,11 @@ function createPromise(position, delay) {
 function onSubmit(e) {
   e.preventDefault();
 
-  delay = Number(refs.delay.value);
-  step = Number(refs.step.value);
-  amount = Number(refs.amount.value);
+  let delay = Number(refs.delay.value);
+  const step = Number(refs.step.value);
+  const amount = Number(refs.amount.value);
 
-  promisesCnt = 0;
+  let promisesCnt = 0;
 
   while (promisesCnt !== amount) {
     promisesCnt += 1;
