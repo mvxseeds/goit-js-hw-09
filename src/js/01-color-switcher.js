@@ -11,7 +11,7 @@ let switchTimerId = null;
 refs.startBtn.addEventListener('click', onStart); 
 refs.stopBtn.addEventListener('click', onStop);
 
-
+// rewrite using classes for training
 function onStart() {
   if (isSwitching) {
     return;
