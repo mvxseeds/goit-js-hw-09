@@ -39,7 +39,7 @@ function onSubmit(e) {
 
   while (promisesCnt !== amount) {
     promisesCnt += 1;
-    const promise = createPromise(amount, delay);
+    const promise = createPromise(promisesCnt, delay);
     delay += step;
 
     promise
