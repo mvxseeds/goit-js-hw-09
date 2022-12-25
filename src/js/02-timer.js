@@ -1,4 +1,5 @@
 import flatpickr from "flatpickr";
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 // Additional styles import
 import "flatpickr/dist/flatpickr.min.css";
 
@@ -72,7 +73,7 @@ function handleDate(date) {
     refs.startBtn.disabled = false;
   } else {
     refs.startBtn.disabled = true;
-    window.alert("Please choose a date in the future");
+    Notify.failure('Please choose a date in the future');
   }
 }
 
