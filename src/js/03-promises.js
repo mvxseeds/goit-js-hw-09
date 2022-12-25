@@ -27,6 +27,7 @@ function createPromise(position, delay) {
 }
 
 
+// refactor adding more functions + destructuring of refs items
 function onSubmit(e) {
   e.preventDefault();
 
