@@ -86,7 +86,6 @@ function isValidDate(date) {
 
 
 function onStartBtnClick() {
-  refs.dtPickerSelector.disabled = true;
   timer.start();
 }
 
